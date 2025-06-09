@@ -15,6 +15,7 @@ import SearchBar from './context/SearchBar';
 import ProtectedRoute from './components/ProtectedRoute'; // ✅ Import
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Verify from './pages/Verify';
 
 function App() {
   return (
@@ -89,6 +90,15 @@ function App() {
           element={
             <ProtectedRoute>
               <Orders />
+            </ProtectedRoute>
+          }
+        />
+
+         <Route
+          path="/verify"
+          element={
+            <ProtectedRoute>
+              <Verify/>
             </ProtectedRoute>
           }
         />
