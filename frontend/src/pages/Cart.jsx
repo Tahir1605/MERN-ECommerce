@@ -3,6 +3,8 @@ import { ShopContext } from '../context/ShopContext';
 import Title from '../components/Title';
 import { assets } from '../assets/frontend_assets/assets';
 import CartTotal from '../components/CartTotal';
+import { toast } from 'react-toastify';
+
 
 function Cart() {
   const { products, currency, cartItems, updateQuantity,navigate } = useContext(ShopContext);
@@ -78,7 +80,14 @@ function Cart() {
           <div className='w-full sm:w-[450px]'>
                 <CartTotal/>
                 <div className=' w-full text-end'>
-                     <button onClick={() => navigate('/place-order')} className='bg-black text-white text-sm my-8 px-8 py-3'>PROCEED TO PAY</button>
+                     <button onClick={() => {
+                       if(cartData.length === 0){
+                        toast.error("Please add Items in the cart")
+                       }
+                       else{
+                        navigate('/place-order')
+                       }
+                     }} className='bg-black text-white text-sm my-8 px-8 py-3'>PROCEED TO PAY</button>
                 </div>
           </div>
       </div>
