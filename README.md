@@ -1,6 +1,4 @@
-# 🚀 React + Vite Project
 
-This is a minimal setup for a React project using Vite, with support for HMR (Hot Module Replacement) and ESLint rules for better development practices.
 
 ## MERN Ecommerce Website
 
@@ -55,13 +53,4 @@ Deployment: Render, Vercel
 
 ---
 
-## 🔧 ESLint Configuration Notes
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-### Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for more information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
