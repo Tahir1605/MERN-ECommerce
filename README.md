@@ -2,7 +2,7 @@
 
 This is a minimal setup for a React project using Vite, with support for HMR (Hot Module Replacement) and ESLint rules for better development practices.
 
-## Ecommerce Website
+## MERN Ecommerce Website
 
 ![Project Screenshot](screenshots/E-Commerce.png)
 
